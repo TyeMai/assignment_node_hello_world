@@ -22,11 +22,11 @@ var _ = require('lodash');
 
 //console.log(_.each(data)) outputs logs.json file
 
-_.each(data, function(lvl, msg) {
+_.each(data, function(obj, index) {
 
   //console.log(msg)
   //console.log(lvl.level)
 
-  myLogger.logger(lvl.message, lvl.level)
+  myLogger.logger(obj.message, obj.level)
   //console.log(data)
 })
